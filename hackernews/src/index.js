@@ -6,9 +6,11 @@ import myClass from './myClass';
 import reportWebVitals from './reportWebVitals';
 import Developer from './Developer';
 import Employees from './Employees';
+import Toggle from './Toggle';
+import Composing from './Composing';
 
 ReactDOM.render(
-    <Employees />,
+  <App />,
   document.getElementById('root')
 );
 
