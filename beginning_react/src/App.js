@@ -7,6 +7,7 @@ import GitHubUser from './GitHubUser';
 // import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 import User from './User';
+import * as firebase from 'firebase';
 
 class App extends Component {
   constructor(props) {
