@@ -19,11 +19,15 @@
 // }
 // //
 
-a = (51)
-b = (72)
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-sum1 = ( a + b )
+class Test extends React.Component {
+  render() {
+    return <h1>Hello World!</h1>;
+  }
+}
 
-print(sum1);
+ReactDOM.render(<Test />, document.getElementById('root'));
 
 
