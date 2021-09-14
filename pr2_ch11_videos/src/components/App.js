@@ -9,10 +9,12 @@ const KEY = 'AIzaSyBbC8YYxbBeBGvghRYtLC74yamksGMO_7Q';
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
+  // Deafault search term buildings
   componentDidMount() {
     this.onTermSubmit('buildings');
   }
 
+  // Fetch list of videos
   onTermSubmit = async (term) => {
     const response = await youtube.get('/search', {
       params: {
@@ -24,12 +26,14 @@ class App extends React.Component {
       },
     });
 
+    // Update application
     this.setState({
       videos: response.data.items,
       selectedVideo: response.data.items[0],
     });
   };
 
+  // Callback for video object.
   onVideoSelect = (video) => {
     this.setState({ selectedVideo: video });
   };
