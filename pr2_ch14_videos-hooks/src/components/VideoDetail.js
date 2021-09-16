@@ -1,15 +1,12 @@
 import React from 'react';
 
-// 
 const VideoDetail = ({ video }) => {
   if (!video) {
     return <div>Loading...</div>;
   }
 
-// Sourch link for <Iframe>
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
 
-// return statement expanded to multiline JSX expresion to give better style
   return (
     <div>
       <div className="ui embed">
